@@ -1,0 +1,10 @@
+button {
+	position: absolute;
+	top: 10%;
+	left: 5%;
+	background-color: red;
+	color: white;
+	border: none;  
+	border-radius: 15px; 
+	padding: 50px;
+}
