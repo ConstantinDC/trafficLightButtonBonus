@@ -1,24 +1,15 @@
-var doc = document.getElementById("lights");
+const TIME_INTERVAL = 10000;
+
+let btn = document.getElementById("lights");
+let color = ['yellow', 'green', 'red'];
+let i = 0;
 
 function changeColor() {
-	if (doc.style.backgroundColor === '') {
- 		doc.style.backgroundColor = 'yellow';
-	} else if (doc.style.backgroundColor === 'yellow') {
-		doc.style.backgroundColor = 'green';
-	} else {
-		doc.style.backgroundColor = '';
-	}
-}
-
-var color = ['yellow', 'green', 'red'];
-var i = 0;
-function change() {
-	doc.style.backgroundColor = color[i];
+	btn.style.backgroundColor = color[i];
 	++i;
 	if (i > color.length - 1) {
 		i = 0;
 	}
 }
 
-setInterval(change, 10000);
-
+setInterval(changeColor, TIME_INTERVAL);
