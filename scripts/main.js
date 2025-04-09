@@ -1,13 +1,13 @@
 const TIME_INTERVAL = 10000;
+const BTN = document.getElementById("btn");
+const COLOR = ['yellow', 'green', 'red'];
 
-let btn = document.getElementById("lights");
-let color = ['yellow', 'green', 'red'];
 let i = 0;
 
 function changeColor() {
-	btn.style.backgroundColor = color[i];
+	BTN.style.backgroundColor = COLOR[i];
 	++i;
-	if (i > color.length - 1) {
+	if (i > COLOR.length - 1) {
 		i = 0;
 	}
 }
