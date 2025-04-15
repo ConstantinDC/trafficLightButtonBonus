@@ -7,7 +7,7 @@ function changeColor () {
   btn.style.backgroundColor = color[i];
   ++i;
   if (i > color.length - 1) {
-  i = 0;
+    i = 0;
   }
 }
 
